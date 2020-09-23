@@ -1,113 +1,75 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="style.css">
-<meta charset="UTF-8">
-<title>Grid</title>
-
-    <STyle>
-
-
-    </STyle>
-</head>
-<body>
-    <table class="TABLICA">
-        <tr>
-    <div class="container">
-       <div class="row">
-         <TD> <div class="col-sm">
-            PETRA BERIĆ
-          </div></TD> 
-        <Td>  <div class="col-sm">
-            PETRA BERIĆ
-          </div></Td>
-         <Td> <div class="col-sm">
-            PETRA BERIĆ
-          </div></Td>
-         <Td> <div class="col-sm">
-            PETRA BERIĆ
-          </div></Td>
-         <Td> <div class="col-sm">
-            PETRA BERIĆ
-          </div></Td>
-         <TD> <div class="col-sm">
-            PETRA BERIĆ
-          </div></TD>
-         <TD> <div class="col-sm">
-            PETRA BERIĆ
-          </div></TD>
-         <TD> <div class="col-sm">
-            PETRA BERIĆ
-          </div></TD>
-         <TD> <div class="col-sm">
-            PETRA BERIĆ
-          </div></TD>
-        <Td> <div class="col-sm">
-            PETRA BERIĆ
-          </div></Td>
-         <TD> <div class="col-sm">
-            PETRA BERIĆ
-          </div></TD>
-          <TD><div class="col-sm">
-            PETRA BERIĆ
-          </div></TD>
-          </tr>
-    </table>
-
-    <table class="TABLICA">
-        <TR>
-          <div class="row">
-            <!-- columns with specific widths -->
-            <TD><div class="col-4" style="padding: 20px; background-color: violet;">PETRA BERIĆ</div></TD>
-            <TD><div class="col-4" style="padding: 20px; background-color: VIOLET;">PETRA BERIĆ</div></TD>
-            <TD><div class="col-4" style="padding: 20px; background-color: violet;">PETRA BERIĆ</div></TD>
-            </div></TR>
-    </table>
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+    <style>html,
+      body {
+        height: 100%;
+      }
       
-    <table class="TABLICA">
-<TR>
-      <div class="container">
-       <TD> <div class="row">
-            <div class="col-4">PETRA BERIĆ</div>
-            <div class="col-8">PETRA BERIĆ</div>
-          </div></TD>
-        </div>
- </TR>
-    </table>
-
-    <table class="TABLICA">
- <TR>
-  <div class="container">
-    <TD><div class="row">
-      <div class="col">
-        PETRA BERIĆ
-      </div></TD>
-     <TD> <div class="col">
-        PETRA BERIĆ
-      </div></TD>
-    </div>
-  </TR> 
-    </table>
-
-
-    <table class="TABLICA">
-<TR>
-    <div class="container;">
-      <TD>  <div class="row">
-          <div class="col">
-            PETRA BERIĆ
-          </diV></TD>
-</TR>
-</table>
-        
-  
-
-
-    
+      body {
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        -ms-flex-align: center;
+        -ms-flex-pack: center;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #f5f5f5;
+      }
+      
+      .form-signin {
+        width: 100%;
+        max-width: 330px;
+        padding: 15px;
+        margin: 0 auto;
+      }
+      .form-signin .checkbox {
+        font-weight: 400;
+      }
+      .form-signin .form-control {
+        position: relative;
+        box-sizing: border-box;
+        height: auto;
+        padding: 10px;
+        font-size: 16px;
+      }
+      .form-signin .form-control:focus {
+        z-index: 2;
+      }
+      .form-signin input[type="email"] {
+        margin-bottom: -1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+      .form-signin input[type="password"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }</style>
+</head>
+<body class="text-center">
+    <form class="form-signin">
+      <h1 class="h3 mb-3 font-weight-normal">Forma za prijavu</h1>
+      <label for="inputEmail" class="sr-only">Email adresa</label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+      <label for="inputPassword" class="sr-only">Šifra</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Zapamti me
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">De prijavi se</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+    </form>
 </body>
 </html>
